@@ -2,6 +2,89 @@
 <class-diagram version="1.2.2" icons="true" automaticImage="JPEG" always-add-relationships="false" 
   generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
   router="FAN">  
+  <class id="1" language="java" name="com.codex.pl.parking.Floor" project="Parking-Lot" 
+    file="/Parking-Lot/src/com/codex/pl/parking/Floor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="119" width="203" x="41" y="250"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.codex.pl.parking.Parking" project="Parking-Lot" 
+    file="/Parking-Lot/src/com/codex/pl/parking/Parking.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="151" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="3" language="java" name="com.codex.pl.vehicle.VehicleType" project="Parking-Lot" 
+    file="/Parking-Lot/src/com/codex/pl/vehicle/VehicleType.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="173" width="138" x="232" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <interface id="4" language="java" name="com.codex.pl.vehicle.Vehicle" project="Parking-Lot" 
+    file="/Parking-Lot/src/com/codex/pl/vehicle/Vehicle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="182" x="632" y="250"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="5" language="java" name="com.codex.pl.vehicle.Car" project="Parking-Lot" 
+    file="/Parking-Lot/src/com/codex/pl/vehicle/Car.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="119" width="182" x="632" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.codex.pl.vehicle.Bike" project="Parking-Lot" 
+    file="/Parking-Lot/src/com/codex/pl/vehicle/Bike.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="119" width="182" x="410" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.codex.pl.vehicle.Truck" project="Parking-Lot" 
+    file="/Parking-Lot/src/com/codex/pl/vehicle/Truck.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="119" width="182" x="854" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="8">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="9">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="10" name="floors"/>      
+      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="12">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="13">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
